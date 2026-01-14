@@ -1,0 +1,11 @@
+name: Run df Command
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-df:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run df command
+        run: df -h

@@ -6,6 +6,8 @@ on:
 jobs:
   run-df:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Run df command
         run: df -h
